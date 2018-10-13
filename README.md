@@ -17,6 +17,8 @@ vue采用3.0.5，npm采用6.4.1，node采用8.12.0
 2. 安装vue cli工具`npm intall -g @vue/cli`
 3. 使用vue脚手架工具创建前端工程`vue create client`
 4. 创建后端工程 `mkdir server && cd server`，初始化工程目录`npm init -y`
+5. 安装后端工程开发依赖库`npm install nodemon eslint --save-dev`
+6. 安装后端工程依赖库`npm install express body-parser cors morgan --save`
 
 ## 相关资料
 
