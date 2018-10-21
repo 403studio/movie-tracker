@@ -2,6 +2,7 @@
 
 ## 说明
 * 第一讲，使用vue-cli和express搭建前后端工程，实现前后端工程的数据连通
+* 第二讲，搭建后台数据库（sqlite)实现用户注册逻辑
 
 ## 环境
 
@@ -27,3 +28,9 @@ vue采用3.0.5，npm采用6.4.1，node采用8.12.0
 
 * [YouTube视频资料](https://www.youtube.com/watch?v=Fa4cRMaTDUI&list=PLWKjhJtqVAbnadueQ-C5keMQQiQau_i0D)
 * [tab-tracker源码](https://github.com/jpantarotto/tab-tracker)
+
+## 联系方式
+* 网站：[http://www.403studio.com/](http://www.403studio.com/)
+* 微信公众号：微信搜索“懒得糊涂个人工作室”
+* GitHub：[https://github.com/403studio/](https://github.com/403studio/)
+* 腾讯视频个人频道：[http://v.qq.com/vplus/c05edea74bbbbcf549f7dca59105875c](http://v.qq.com/vplus/c05edea74bbbbcf549f7dca59105875c)
