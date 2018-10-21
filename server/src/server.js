@@ -11,13 +11,7 @@ app.use(bodyParser.json())
 app.use(cors())
 app.use(morgan('combined'))
 
-app.post('/register', (req, res) => {
-  console.log(req.body.email)
-  res.send({
-    code: 200,
-    msg: 'hello world'
-  })
-})
+require('./route')(app)
 try {
   sequelize
     .sync()
