@@ -32,6 +32,6 @@ vue采用3.0.5，npm采用6.4.1，node采用8.12.0
 
 ## 联系方式
 * 网站：[http://www.403studio.com/](http://www.403studio.com/)
-* 微信公众号：微信搜索“懒得糊涂个人工作室”
+* 微信公众号：微信搜索公众号“懒得糊涂个人工作室”
 * GitHub：[https://github.com/403studio/](https://github.com/403studio/)
 * 腾讯视频个人频道：[http://v.qq.com/vplus/c05edea74bbbbcf549f7dca59105875c](http://v.qq.com/vplus/c05edea74bbbbcf549f7dca59105875c)
