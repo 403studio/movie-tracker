@@ -1,13 +1,24 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/register">Register</router-link> |
-      <router-link to="/login">Login</router-link>
-    </div>
+  <v-app id="app">
+    <v-toolbar dark color="primary">
+      <v-toolbar-side-icon></v-toolbar-side-icon>
+      <v-toolbar-title class="white--text">Movie Tracker</v-toolbar-title>
+      <v-btn flat :to="'/'">
+        <span>Home</span>
+      </v-btn>
+      <v-spacer></v-spacer>
+      <v-btn icon>
+        <v-icon>fa-search</v-icon>
+      </v-btn>
+      <v-btn flat :to="{name: 'register'}">
+        <span>Register</span>
+      </v-btn>
+      <v-btn flat :to="{name: 'login'}">
+        <span>Login</span>
+      </v-btn>
+    </v-toolbar>
     <router-view/>
-  </div>
+  </v-app>
 </template>
 <style lang="stylus">
 #app

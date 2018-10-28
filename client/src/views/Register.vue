@@ -1,11 +1,23 @@
 <template>
-  <div>
-    <h1>Register</h1>
-    <input type="email" v-model="email" placeholder="Email" /><br/>
-    <input type="password" v-model="password" placeholder="Password" /><br/>
-    <div>{{ error }}</div>
-    <button @click="register">Register</button>
-  </div>
+  <v-layout>
+    <v-flex md6 offset-md3>
+      <form>
+        <v-text-field
+          v-model="email"
+          label="邮箱"
+          required
+        ></v-text-field>
+        <v-text-field
+          v-model="password"
+          label="密码"
+          type="password"
+          required
+        ></v-text-field>
+        <div class="red">{{ error }}</div>
+        <v-btn @click="register">注册提交</v-btn>
+      </form>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>
