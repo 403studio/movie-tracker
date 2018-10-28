@@ -8,5 +8,11 @@ module.exports = {
       dialect: 'sqlite',
       storage: './movietracker.sqlite'
     }
+  },
+  jwt: {
+    secret: process.env.JWTSECRET || 'movietracker',
+    options: {
+      expiresIn: '7d'
+    }
   }
 }

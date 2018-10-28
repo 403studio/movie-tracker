@@ -6,4 +6,7 @@ module.exports = (app) => {
     UserPolicy.register,
     UserController.register
   )
+  app.post('/login',
+    UserController.login
+  )
 }
