@@ -1,7 +1,7 @@
 const Promise = require('bluebird')
 const bcrypt = Promise.promisifyAll(require('bcrypt-nodejs'))
 
-function hashPassword (user, options) {
+function hashPassword (user, _options) {
   return bcrypt.genSaltAsync(8)
     .then(salt => bcrypt.hashAsync(user.password, salt, null))
     .then(hash => {
@@ -25,8 +25,7 @@ module.exports = (sequelize, DataTypes) => {
   {
     hooks: {
       beforeCreate: hashPassword,
-      beforeUpdate: hashPassword,
-      beforeSave: hashPassword
+      beforeUpdate: hashPassword
     }
   }
   )

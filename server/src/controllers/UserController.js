@@ -36,8 +36,7 @@ module.exports = {
           result: '用户登录失败，没有找到相关用户信息'
         })
       }
-      // TODO: 添加await,hash判断出现错误
-      const isValid = user.comparePassword(password)
+      const isValid = await user.comparePassword(password)
       console.log(isValid)
       if (!isValid) {
         return res.status(403).send({
