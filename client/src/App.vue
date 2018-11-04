@@ -1,25 +1,21 @@
 <template>
   <v-app id="app">
-    <v-toolbar dark color="primary">
-      <v-toolbar-side-icon></v-toolbar-side-icon>
-      <v-toolbar-title class="white--text">Movie Tracker</v-toolbar-title>
-      <v-btn flat :to="'/'">
-        <span>Home</span>
-      </v-btn>
-      <v-spacer></v-spacer>
-      <v-btn icon>
-        <v-icon>fa-search</v-icon>
-      </v-btn>
-      <v-btn flat :to="{name: 'register'}">
-        <span>Register</span>
-      </v-btn>
-      <v-btn flat :to="{name: 'login'}">
-        <span>Login</span>
-      </v-btn>
-    </v-toolbar>
-    <router-view/>
+    <page-header />
+    <div id="container">
+      <router-view/>
+    </div>
   </v-app>
 </template>
+<script>
+import PageHeader from '@/components/PageHeader.vue'
+
+export default {
+  components: {
+    PageHeader
+  }
+}
+</script>
+
 <style lang="stylus">
 #app
   font-family 'Avenir', Helvetica, Arial, sans-serif
@@ -35,4 +31,7 @@
     color #2c3e50
     &.router-link-exact-active
       color #42b983
+
+#container
+  margin-top 80px
 </style>

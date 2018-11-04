@@ -1,11 +1,23 @@
 <template>
-  <div>
-    <h1>Login</h1>
-    <input type="email" v-model="email" placeholder="Email" /><br/>
-    <input type="password" v-model="password" placeholder="Password" /><br/>
-    <div>{{ error }}</div>
-    <button @click="login">Login</button>
-  </div>
+  <v-layout>
+    <v-flex xs6 offset-xs3>
+      <panel title="Login">
+        <v-text-field
+          v-model="email"
+          label="Email"
+          required
+        ></v-text-field>
+        <v-text-field
+          v-model="password"
+          label="Password"
+          type="password"
+          required
+        ></v-text-field>
+        <div>{{ error }}</div>
+        <v-btn class="primary" @click="login">Login</v-btn>
+      </panel>
+    </v-flex>
+  </v-layout>
 </template>
 
 <script>

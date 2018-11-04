@@ -18,5 +18,6 @@ fs.readdirSync(__dirname)
     db[model.name] = model
   })
 db['sequelize'] = sequelize
+// db['Movie'].sync({ force: true })
 
 module.exports = db

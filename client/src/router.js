@@ -33,6 +33,16 @@ export default new Router({
       path: '/login',
       name: 'login',
       component: () => import(/* webpackChunkName: "about" */ './views/Login.vue')
+    },
+    {
+      path: '/movies',
+      name: 'movies',
+      component: () => import('./views/movie/Index.vue')
+    },
+    {
+      path: '/movie/create',
+      name: 'movie-create',
+      component: () => import('./views/movie/Create.vue')
     }
   ]
 })

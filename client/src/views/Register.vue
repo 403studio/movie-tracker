@@ -1,7 +1,7 @@
 <template>
   <v-layout>
     <v-flex md6 offset-md3>
-      <form>
+      <panel title="Register">
         <v-text-field
           v-model="email"
           label="邮箱"
@@ -15,7 +15,7 @@
         ></v-text-field>
         <div class="red">{{ error }}</div>
         <v-btn @click="register">注册提交</v-btn>
-      </form>
+      </panel>
     </v-flex>
   </v-layout>
 </template>
