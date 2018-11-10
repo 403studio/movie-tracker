@@ -6,5 +6,8 @@ export default {
   },
   post (data) {
     return Api().post('/movie', data)
+  },
+  search (data) {
+    return Api().get(`/movies?search=${data}`, data)
   }
 }
