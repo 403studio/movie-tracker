@@ -1,6 +1,7 @@
 const UserController = require('./controllers/UserController')
 const MovieController = require('./controllers/MovieController')
 const UserPolicy = require('./policies/UserPolicy')
+const AuthenticationPolicy = require('./policies/AuthenticationPolicy')
 
 module.exports = (app) => {
   app.post('/register',
@@ -12,6 +13,7 @@ module.exports = (app) => {
   )
 
   app.get('/movies',
+    AuthenticationPolicy,
     MovieController.index
   )
   app.post('/movie',

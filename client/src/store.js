@@ -9,7 +9,8 @@ export default new Vuex.Store({
   strict: true,
   state: {
     user: null,
-    token: null
+    token: null,
+    isUserLogin: false
   },
   mutations: {
     setUser (state, user) {
@@ -17,6 +18,11 @@ export default new Vuex.Store({
     },
     setToken (state, token) {
       state.token = token
+      if (!token) {
+        state.isUserLogin = false
+      } else {
+        state.isUserLogin = true
+      }
     }
   },
   actions: {

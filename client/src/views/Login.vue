@@ -43,6 +43,9 @@ export default {
         const token = data.result.token
         this.$store.dispatch('setUser', user)
         this.$store.dispatch('setToken', token)
+        this.$router.push({
+          name: 'movies'
+        })
       } catch (error) {
         console.log(error.response)
         this.error = error.response.data.result

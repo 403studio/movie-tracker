@@ -70,7 +70,11 @@ export default {
     try {
       this.movies = (await MovieService.index()).data
     } catch (err) {
-      console.log(err)
+      if (err.response.status === 403) {
+        this.$router.push({
+          name: 'login'
+        })
+      }
     }
   }
 }

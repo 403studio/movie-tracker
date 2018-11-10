@@ -12,7 +12,7 @@ module.exports = {
   jwt: {
     secret: process.env.JWTSECRET || 'movietracker',
     options: {
-      expiresIn: '7d'
+      expiresIn: '2h'
     }
   }
 }
